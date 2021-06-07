@@ -50,19 +50,28 @@ $posts = [
     ],
 ];
 
-foreach($posts as $post => $alue){
 
-  echo "<ul>
-  <li>" . $post . 
-    "<ul>
-      <li>Titolo: " . $value['title'] . "</li>
-      <li>Autore: " . $value['author'] . "</li>
-      <li>Testo: " . $value['text'] . "</li>
-     </ul>
-  </li>
-</ul>";
-};
 ?>
+
+<ul>
+
+<?php
+
+foreach($posts as $key => $post){
+foreach($post as $msg){ 
+  ?>
+
+<li> 
+
+<?php echo $key ?> : <?php echo $msg["text"] ?>  
+
+
+
+</li>
+
+<?php }}?>
+
+</ul>
 
 
 

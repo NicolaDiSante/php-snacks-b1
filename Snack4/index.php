@@ -10,16 +10,17 @@
 
 <?php
 
-$arr = [];
+
+$numRnd = [];
     
-    while (count($arr) < 15) {
+    while (count($numRnd) < 15) {
       $num = rand(1, 100);
-      if (!in_array($num, $arr)) {
-        array_push($arr, $num);
+      if (!in_array($num, $numRnd)) {
+        array_push($numRnd, $num);
       }
     }
   
-    var_dump($arr);
+    var_dump($numRnd);
 
 
 ?>
